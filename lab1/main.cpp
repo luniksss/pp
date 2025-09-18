@@ -34,6 +34,7 @@ int main(int argc, char* argv[])
         if (handles[i] == nullptr)
         {
             std::cout << "Ошибка при создании потока " << i + 1 << std::endl;
+            delete[] handles;
             return 1;
         }
     }
